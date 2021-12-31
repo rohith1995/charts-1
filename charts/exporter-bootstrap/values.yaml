@@ -1,2 +1,10 @@
 prometheus-redis-exporter:
   author: KevinHiggins
+  serviceMonitor:
+    enabled: true
+    labels:
+      release: exporter-bootstrap
+  redisAddress: redis://idunno:6379
+  auth:
+    enabled: true
+    redisPassword: ""
