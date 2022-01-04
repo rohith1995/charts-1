@@ -3,6 +3,22 @@ entries:
   exporter-bootstrap:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-01-04T16:33:59.722176966Z"
+    dependencies:
+    - name: prometheus-redis-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.6.0
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 18.0.5
+    digest: 0168e94995a77c45866428e8abb5d09190415211db5c6e4c23ab232fa08febb7
+    name: exporter-bootstrap
+    type: application
+    urls:
+    - https://github.com/KevinCHiggins/charts/releases/download/exporter-bootstrap-1.5.0/exporter-bootstrap-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-01-04T14:57:36.721045769Z"
     dependencies:
     - name: prometheus-redis-exporter
@@ -81,4 +97,4 @@ entries:
     urls:
     - https://github.com/KevinCHiggins/charts/releases/download/exporter-bootstrap-1.0.0/exporter-bootstrap-1.0.0.tgz
     version: 1.0.0
-generated: "2022-01-04T14:57:36.72107187Z"
+generated: "2022-01-04T16:33:59.722240865Z"
