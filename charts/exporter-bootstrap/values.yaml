@@ -1,5 +1,5 @@
 prometheus-redis-exporter:
-  author: KevinHiggins
+  redisAddress: redis://172.17.0.16:6379
   serviceMonitor:
     enabled: true
     labels:
