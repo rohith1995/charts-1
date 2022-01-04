@@ -1,5 +1,8 @@
 prometheus-redis-exporter:
   redisAddress: redis://172.17.0.16:6379
+  auth:
+    enabled: true
+    redisPassword: LCSqRWVmgZ
   serviceMonitor:
     enabled: true
     labels:
