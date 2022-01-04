@@ -6,6 +6,8 @@ prometheus-redis-exporter:
       release: exporter-bootstrap
 kube-prometheus-stack:
   prometheus:
+    service:
+      type: NodePort
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
