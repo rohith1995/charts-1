@@ -14,4 +14,3 @@ kube-prometheus-stack:
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
-      # nksjhf
