@@ -1,11 +1,8 @@
 prometheus-mongodb-exporter:
-  mongodbAddress: mongodb://172.17.0.4:27017
-  auth:
-    enabled: true
+  mongodb: 
+    uri: mongodb://172.17.0.4:27017
   serviceMonitor:
     enabled: true
-    labels:
-      release: exporter-bootstrap
 kube-prometheus-stack:
   prometheus:
     service:
@@ -13,4 +10,3 @@ kube-prometheus-stack:
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
-# Test
