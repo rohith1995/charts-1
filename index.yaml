@@ -3,6 +3,22 @@ entries:
   exporter-bootstrap:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-01-05T14:51:29.932116854Z"
+    dependencies:
+    - name: prometheus-mongodb-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.8.1
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 18.0.5
+    digest: b2d536198a5829fc248d552d814a4f958cf764b35e9369927c706c6814f16b21
+    name: exporter-bootstrap
+    type: application
+    urls:
+    - https://github.com/rohith1995/charts-1/releases/download/exporter-bootstrap-1.6.2/exporter-bootstrap-1.6.2.tgz
+    version: 1.6.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-01-05T12:45:22.413407381Z"
     dependencies:
     - name: prometheus-mongodb-exporter
@@ -129,4 +145,4 @@ entries:
     urls:
     - https://github.com/KevinCHiggins/charts/releases/download/exporter-bootstrap-1.0.0/exporter-bootstrap-1.0.0.tgz
     version: 1.0.0
-generated: "2022-01-05T12:45:22.413447484Z"
+generated: "2022-01-05T14:51:29.932163653Z"
