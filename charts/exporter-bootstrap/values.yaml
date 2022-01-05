@@ -9,7 +9,7 @@ prometheus-mongodb-exporter:
 kube-prometheus-stack:
   prometheus:
     service:
-      type: NodePort
+      type: ClusterIP
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
