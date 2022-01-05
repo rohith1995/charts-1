@@ -1,6 +1,6 @@
 prometheus-mongodb-exporter:
   mongodb: 
-    uri: "mongodb://172.17.0.4:27017"
+    uri: mongodb://172.17.0.4:27017
   serviceMonitor:
     enabled: true
 kube-prometheus-stack:
