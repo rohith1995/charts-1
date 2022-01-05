@@ -1,8 +1,7 @@
-prometheus-redis-exporter:
-  redisAddress: redis://172.17.0.8:6379
+prometheus-mongodb-exporter:
+  mongodbAddress: mongodb://172.17.0.2:9216
   auth:
     enabled: true
-    redisPassword: LCSqRWVmgZ
   serviceMonitor:
     enabled: true
     labels:
@@ -14,3 +13,4 @@ kube-prometheus-stack:
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
+# Test
