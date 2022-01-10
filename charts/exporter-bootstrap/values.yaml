@@ -1,6 +1,28 @@
-prometheus-mongodb-exporter:
-  mongodb: 
-    uri: mongodb://172.17.0.4:27017
+redis-exporter-1:
+  redisAddress: redis://172.17.0.8:6379
+  auth:
+    enabled: true
+    redisPassword: Y25Tncc8qR
+  serviceMonitor:
+    enabled: true
+redis-exporter-2:
+  redisAddress: redis://172.17.0.21:6389
+  auth:
+    enabled: true
+    redisPassword: jR90JeYDwM
+  serviceMonitor:
+    enabled: true
+prometheus-postgres-exporter:
+  config:
+    datasource:
+      host: 172.17.0.17
+      port: "5432"
+      user: postgres
+      password: postgres
+      database: ""
+      sslmode: disable
+  service:
+    type: NodePort
   serviceMonitor:
     enabled: true
 kube-prometheus-stack:
@@ -10,3 +32,6 @@ kube-prometheus-stack:
     prometheusSpec:
       serviceMonitorSelectorNilUsesHelmValues: false
       podMonitorSelectorNilUsesHelmValues: false
+  prometheusOperator:
+    admissionWebhooks:
+      enabled: false
