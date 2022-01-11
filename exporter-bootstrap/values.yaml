@@ -1,15 +1,15 @@
 redis-exporter-1:
-  redisAddress: redis://172.17.0.8:6379
+  redisAddress: redis://172.17.0.26:6379
   auth:
     enabled: true
-    redisPassword: Y25Tncc8qR
+    redisPassword: Zyl1vplxkz
   serviceMonitor:
     enabled: true
 redis-exporter-2:
-  redisAddress: redis://172.17.0.21:6389
+  redisAddress: redis://172.17.0.12:6379
   auth:
     enabled: true
-    redisPassword: jR90JeYDwM
+    redisPassword: w8bGuRUsXW
   serviceMonitor:
     enabled: true
 prometheus-postgres-exporter:
