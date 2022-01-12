@@ -121,7 +121,7 @@ sidecar:
 
 
 redis-exporter-1:
-  redisAddress: redis://172.17.0.26:6379
+  redisAddress: redis://172.17.0.7:6379
   auth:
     enabled: true
     redisPassword: uTwNl9zZGr
