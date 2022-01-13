@@ -124,14 +124,14 @@ redis-exporter-1:
   redisAddress: redis://172.17.0.7:6379
   auth:
     enabled: true
-    redisPassword: uTwNl9zZGr
+    redisPassword: redis
   serviceMonitor:
     enabled: true
 redis-exporter-2:
   redisAddress: redis://172.17.0.12:6379
   auth:
     enabled: true
-    redisPassword: H0CF3HF89q
+    redisPassword: redis-2
   serviceMonitor:
     enabled: true
   service:

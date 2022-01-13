@@ -2,7 +2,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: k8s-sidecar
+  name: {{ include "k8s-sidecar.fullname" . }}
 rules:
 - apiGroups: [""] # "" indicates the core API group
   resources: ["configmaps", "secrets"]
@@ -13,12 +13,12 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: k8s-sidecar
+  name: {{ include "k8s-sidecar.fullname" . }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: k8s-sidecar
+  name: {{ include "k8s-sidecar.fullname" . }}
 subjects:
 - kind: ServiceAccount
-  name: k8s-sidecar
-  namespace: default
+  name: {{ include "k8s-sidecar.fullname" . }}
+  namespace: {{ .Release.Namespace }}
